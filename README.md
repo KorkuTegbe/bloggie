@@ -1,4 +1,4 @@
-# Korku Blog API
+# Bloggie API
 
 ## INTRODUCTION
 ---
@@ -38,7 +38,6 @@ The API follows a monolithic architecture which best suits the projects scope du
 |  name | string  |  required |
 |  avatar  |  string |  required  |
 |  password     | string  |  required |
-|  avatar     | string  |   |
 |  createdAt  | date  |   |
 |  updatedAt  | date  |   |
 
