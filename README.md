@@ -1,4 +1,4 @@
-# Bloggie API
+# BLOGGEE API
 
 ## INTRODUCTION
 ---
@@ -16,8 +16,8 @@ The API follows a monolithic architecture which best suits the projects scope du
 
 ### Links
 
-- API URL: [link to the api](https://)
-- Docs: [documentation](https://)
+- API URL: [link to the api](https://bloggee.onrender.com/docs/)
+- Docs: [documentation](https://bloggee.onrender.com/docs/)
 
 ## TECHNOLOGIES AND TOOLS
 ---
@@ -66,7 +66,7 @@ The API follows a monolithic architecture which best suits the projects scope du
 
 ## API Endpoints
 
-- Docs: [documentation](https://)
+- Docs: [documentation](https://bloggee.onrender.com/docs/)
 
 ## Setting up the enviroment locally
 ---
