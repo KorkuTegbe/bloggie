@@ -124,27 +124,17 @@ export const getPublishedBlogPosts = async (query: any): Promise<IService> => {
         const limit = features.queryString.limit;
         const page = features.queryString.page;
   
-        // const blogPosts = await features.query.populate([
-        //     {
-        //         path: 'author',
-        //         select: 'name',
-        //     },
-        //     {
-        //         path: 'comments',
-        //         select: 'comment author'
-        //     }
-        // ]);
-        // const blogPosts = await features.query.populate('comments') //.populate('comments')
-        const blogPosts = await BlogPostsDb.find({ state: 'PUBLISHED'}).populate([
+        const blogPosts = await features.query.populate([
             {
                 path: 'author',
                 select: 'name',
             },
             {
                 path: 'comments',
-                select: 'comment author',
-            },
-        ])
+                select: 'comment author'
+            }
+        ]);
+        
         const count = await BlogPostsDb.countDocuments(filter);
   
         return {
