@@ -21,8 +21,6 @@ export const HandleLogin = async (req: Request, res: Response) => {
         const { email, password } = <LoginRequest>req.body
 
         const response = await loginUser({ email, password })
-
-        res.cookie('accessToken', response.accessToken, { expires: new Date(Date.now() + 1 * 60 * 60 *1000), httpOnly: true})
         
         return res.status(200).json(response);
         
